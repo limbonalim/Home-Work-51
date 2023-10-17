@@ -1,11 +1,6 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Numbers from "./Numbers/Numbers.tsx";
 import {useState} from "react";
-// import {Simulate} from "react-dom/test-utils";
-// import change = Simulate.change;
 
 function App() {
     const getNumber = (min: number = 5, max: number = 36) => {

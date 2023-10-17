@@ -9,7 +9,7 @@ const Numbers = ({numbers}) => {
                 <div className="numbers">{numbers[4]}</div>
             </div>
         </div>
-    )
+    );
 };
 
 export default  Numbers;

@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import Numbers from "./Numbers/Numbers.tsx";
 import {useState} from "react";
 
@@ -11,12 +11,12 @@ function App() {
         if (arr.length === 5) {
             return arr;
         }
-        let number = getNumber(4, currentMax);
+        let number = getNumber(5, currentMax);
         if (number > arr[arr.length - 1] || arr.length === 0) {
             arr.push(number);
             currentMax += 5;
         }
-        getRandomNumbers(currentMax, arr)
+        getRandomNumbers(currentMax, arr);
     };
 
     const [numbers, setNumbers] = useState([5, 11, 16, 23, 32]);
@@ -24,7 +24,7 @@ function App() {
     const changeNumbers = () => {
         let current = 11;
         let arrOfNumbers:number[] = [];
-        getRandomNumbers(current, arrOfNumbers)
+        getRandomNumbers(current, arrOfNumbers);
         setNumbers(arrOfNumbers);
     };
 
@@ -33,7 +33,7 @@ function App() {
         <button onClick={changeNumbers}>New numbers</button>
         <Numbers numbers={numbers}/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

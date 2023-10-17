@@ -3,13 +3,22 @@
 import viteLogo from '/vite.svg'
 import './App.css'
 import Numbers from "./Numbers/Numbers.tsx";
-let a = [1,2,3,4,5]
+import {useState} from "react";
+import {Simulate} from "react-dom/test-utils";
+import change = Simulate.change;
+
 function App() {
+
+    const [numbers, setNumbers] = useState([5, 11, 16, 23, 32]);
+
+    const changeNumbers = () => {
+        setNumbers([1, 11, 12, 13, 13]);
+    };
 
   return (
     <div>
-        <button>New numbers</button>
-        <Numbers numbers={a}/>
+        <button onClick={changeNumbers}>New numbers</button>
+        <Numbers numbers={numbers}/>
     </div>
   )
 }

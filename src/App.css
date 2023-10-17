@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+.numbers-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.numbers {
+  color: #082608;
+  font-size: 30px;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(124deg, rgba(131,58,180,0.7959558823529411) 0%, rgba(253,29,29,0.49343487394957986) 50%, rgba(252,176,69,0.5438550420168067) 100%);
+}
